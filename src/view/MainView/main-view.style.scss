@@ -1,0 +1,93 @@
+@import '../../css/constants.scss';
+
+.main-view {
+    width: 90%;
+    height: 100%;
+    background-color: #121011;
+    opacity: .8;
+
+    .ai-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &-logo {
+            background-image: url('../../assets/img/logo.png');
+            background-size: cover;
+            height: 3rem;
+            width: 15rem;
+            margin-left: 2rem;
+        }
+
+        &-pnumber {
+            color: $ai-primaryColorRed;
+            margin-right: 2rem;
+        }
+    }
+
+    .ai-header__slogan {
+        width: 100%;
+        background-color: $ai-primaryColorRed;
+        display: flex;
+        justify-content: center;
+    
+        & h1 {
+            margin: 0;
+            padding: 1rem;
+            color: white;
+            text-transform: uppercase;
+        }
+    }
+
+    .ai-slogan__section {
+        margin-top: 2rem;
+    }
+
+    .ai-advantages {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .ai-advantages-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 1.5rem;
+
+            .ai-icon {
+                color: white;
+            }
+
+            h3 {
+                color: white;
+            }
+        }
+    }
+    
+    .ai-about {
+        display: flex;
+
+        &-item {
+            width: 50%;
+            background-color: $ai-primaryColorRed;
+            margin: 1rem;
+            padding: 0 1.5rem;
+
+            h1 {
+                color: white;
+            }
+
+            .ai-about-text__primary {
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+        }
+
+        .ai-sn-icon {
+            display: inline-block;
+            padding-right: 1.5rem;
+            color: white;
+        }
+    }
+    
+}

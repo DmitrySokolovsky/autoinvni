@@ -23,11 +23,15 @@ module.exports = {
             }
         },
         {
+            test: /\.css$/,
+            use: ["style-loader", "css-loader"]
+        },
+        {
             test: /\.scss$/,
             use: ["style-loader", "css-loader", "sass-loader"]
         },
         {
-            test: /\.(png|jpg|gif)$/,
+            test: /\.(png|jpg|gif|svg)$/,
             use: [
                 {
                     loader: "url-loader",
@@ -36,19 +40,7 @@ module.exports = {
                     }
                 }
             ]
-        },
-        {
-            test: /\.(jpg|png|svg)$/,
-            use: [
-                {
-                    loader: 'file-loader',
-                    options: {
-                        name: 'assets/img/[name].[ext]'
-                    }
-                }
-                
-            ]
-        },
+        },        
         {
             test: /\.(woff|woff2|eot|ttf|otf)$/,
             use: [

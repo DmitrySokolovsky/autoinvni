@@ -1,15 +1,10 @@
-import { Provider } from 'react-redux';
-import { connect } from 'react-redux';
 import ReactDom from 'react-dom';
 import React from "react";
-import {App} from "./components/hw-main/hw-main.jsx"; 
-import {appStore} from "./store";
-import "./style.css";
+import "./style.scss";
+import { MainView } from './view/MainView/main.view.jsx';
 
 ReactDom.render(
-    <Provider store={appStore}>
-    <App/>
-    </Provider>
+    <MainView/>
     ,document.getElementById('test'));
 
 
