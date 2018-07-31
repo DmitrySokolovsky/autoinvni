@@ -85,9 +85,25 @@
 
         .ai-sn-icon {
             display: inline-block;
-            padding-right: 1.5rem;
             color: white;
+
+            &:not(:last-child) {
+                padding-right: 1.5rem;
+            }
         }
+
+        .ai-sn {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .ai-products {
+        margin: 2rem 1rem;
+        background-color: $ai-primaryColorRed;
+
+
     }
     
 }
