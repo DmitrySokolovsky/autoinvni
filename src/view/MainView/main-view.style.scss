@@ -9,6 +9,7 @@
     .ai-header {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap; //MOB
         align-items: center;
 
         &-logo {
@@ -66,9 +67,10 @@
     
     .ai-about {
         display: flex;
+        flex-wrap: wrap;
 
         &-item {
-            width: 50%;
+            width: 100%; // MOB
             background-color: $ai-primaryColorRed;
             margin: 1rem;
             padding: 0 1.5rem;
@@ -84,7 +86,7 @@
         }
 
         .ai-sn-icon {
-            display: inline-block;
+            display: flex;
             color: white;
 
             &:not(:last-child) {
@@ -95,15 +97,26 @@
         .ai-sn {
             margin-top: 2rem;
             display: flex;
+            flex-wrap: wrap;
+            width: 100%;
             justify-content: space-between;
+
+            .ai-sn__icon {
+                display: block;
+                padding: .5rem;
+            }
         }
     }
 
     .ai-products {
         margin: 2rem 1rem;
-        background-color: $ai-primaryColorRed;
 
-
+        &__title {
+            padding: 1rem;
+            color: white;
+            text-align: center;
+            background-color: $ai-primaryColorRed;
+        }
     }
     
 }

@@ -1,0 +1,45 @@
+@import '../../css/constants.scss';
+
+.ai-product-item {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    width: 350px;
+    //background-color: $ai-primaryColorRed;
+
+    &__title-container {
+        height: 7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 86px;
+        border-radius: 1rem;
+        background-color: $ai-primaryColorRed;
+        border-right: 2px solid white;
+        border-bottom: 2px solid white;
+        cursor: pointer;
+    }
+
+    .ai-product-item__pic {
+        width: 350px;
+        height: 300px;
+        padding: .5rem;
+        box-sizing: border-box;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .ai-product-item__title {
+        text-align: center;
+        width: 70%;
+        font-size: 1rem;
+        color: white;
+    }
+}

@@ -66,16 +66,17 @@ export class MainView extends React.Component {
                         <div className="ai-about-text__primary">
                             Мы в социальных сетях
                             <p className="ai-sn">
-                                <i className="fab fa-instagram ai-sn-icon fa-3x"></i>
-                                <i className="fab fa-odnoklassniki ai-sn-icon fa-3x"></i>
-                                <i className="fab fa-twitter ai-sn-icon fa-3x"></i>
-                                <i className="fab fa-vk ai-sn-icon fa-3x"></i>
-                                <i className="fab fa-facebook-square ai-sn-icon fa-3x"></i>
+                                <i className="fab fa-instagram ai-sn-icon fa-2x ai-sn__icon"></i>
+                                <i className="fab fa-odnoklassniki ai-sn-icon fa-2x ai-sn__icon"></i>
+                                <i className="fab fa-twitter ai-sn-icon fa-2x ai-sn__icon"></i>
+                                <i className="fab fa-vk ai-sn-icon fa-2x ai-sn__icon"></i>
+                                <i className="fab fa-facebook-square ai-sn-icon fa-2x ai-sn__icon"></i>
                             </p>
                         </div>
                     </div>
                 </div>
                 <div className="ai-products" id="products">
+                    <h1 className="ai-products__title">НАШИ УСЛУГИ</h1>
                     <ProductList/>
                 </div>
             </div>
