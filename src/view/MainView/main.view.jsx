@@ -1,5 +1,6 @@
 import React from 'react';
 import './main-view.style.scss';
+import './main-view.mobile.styles.scss';
 import { MainSlider } from '../../components/slider';
 import { ProductList } from '../../components';
 // import { Geo } from '../../components/geo';
@@ -19,9 +20,7 @@ export class MainView extends React.Component {
                 <div className="ai-main-frame">
                     <MainSlider />
                 </div>
-                <div className="ai-header__slogan ai-slogan__section">
-                    <h1 className="ai-slogan__title">наши приемущества</h1>
-                </div>
+                <h1 className="ai-products__title">НАШИ ПРЕИМУЩЕСТВА</h1>
                 <div className="ai-advantages">
                     <div className="ai-advantages-item">
                         <i className="fas fa-shuttle-van ai-icon fa-5x"></i>
@@ -40,20 +39,21 @@ export class MainView extends React.Component {
                         <h3>Низкие цены</h3>
                     </div>
                 </div>
+                
+                <h1 className="ai-products__title">НАШИ УСЛУГИ</h1>
+                <div className="ai-products" id="products">
+                    <ProductList/>
+                </div>
+                <h1 className="ai-products__title">КОНТАКТЫ</h1>
                 <div className="ai-about">
+                    
                     <div className="ai-about-item">
-                        <h1>О нас</h1>
-                        <p className="ai-about-text">
-                         ed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
-                         totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
-                         sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                         consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-                         qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius  
-                         tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, q
-                         uis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
-                         Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, 
-                         vel illum qui dolorem eum fugiat quo voluptas nulla pariatur
-                        </p>
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2353.4872607411776!2d30.359940815857616!3d53.85198298008814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46d053b3900802cd%3A0x1c1fe9615c6e88e9!2z0KHQotCeINCn0J8gItCY0JLQndCYIg!5e0!3m2!1sru!2sby!4v1534445248529" 
+                            width="100%" 
+                            height="100%" 
+                            frameBorder="0" 
+                            allowFullScreen></iframe>
                     </div>
                     <div className="ai-about-item">
                         <h1>Контакты</h1>
@@ -74,10 +74,6 @@ export class MainView extends React.Component {
                             </p>
                         </div>
                     </div>
-                </div>
-                <div className="ai-products" id="products">
-                    <h1 className="ai-products__title">НАШИ УСЛУГИ</h1>
-                    <ProductList/>
                 </div>
             </div>
         );

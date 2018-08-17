@@ -1,10 +1,11 @@
 @import '../../css/constants.scss';
 
 .main-view {
-    width: 90%;
+    max-width: 1250px;
     height: 100%;
     background-color: #121011;
     opacity: .8;
+    margin: 0 auto;
 
     .ai-header {
         display: flex;
@@ -48,11 +49,15 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+        height: 15rem;
+        max-width: 1150px;
+        margin: 0 auto;
 
         .ai-advantages-item {
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
             margin: 1.5rem;
 
             .ai-icon {
@@ -67,12 +72,12 @@
     
     .ai-about {
         display: flex;
-        flex-wrap: wrap;
+        max-width: 100%;
+        margin: 0 auto;
 
         &-item {
-            width: 100%; // MOB
+            width: 50%; // 100% MOB
             background-color: $ai-primaryColorRed;
-            margin: 1rem;
             padding: 0 1.5rem;
 
             h1 {
@@ -110,6 +115,9 @@
 
     .ai-products {
         margin: 2rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         &__title {
             padding: 1rem;

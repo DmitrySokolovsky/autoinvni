@@ -18,7 +18,7 @@ export class MainSlider extends React.Component {
         return (
             <div className="ai-slider">
                 <div className="ai-slider__slogan">
-                    <a href="#" className="ai-slider__btn">НАШИ УСЛУГИ</a>
+                    <a href="#products" className="ai-slider__btn">НАШИ УСЛУГИ</a>
                 </div>
                 <Slider {...config}>
                     <div className="ai-slider__item ai-slider__item--1"></div>
