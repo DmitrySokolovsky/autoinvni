@@ -1,9 +1,7 @@
 import React from 'react';
 import './main-view.style.scss';
-// import './main-view.mobile.styles.scss'; 
 import { MainSlider } from '../../components/slider';
 import { ProductList } from '../../components';
-// import { Geo } from '../../components/geo';
 
 export class MainView extends React.Component {
 

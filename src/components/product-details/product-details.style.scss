@@ -13,7 +13,7 @@
     align-items: center;
 
     &__btn-icon {
-        color: $ai-primaryColorRed;
+        color: black;
     }
 
     &__container {
@@ -58,9 +58,7 @@
         position: absolute;
         top: 1rem;
         right: 1rem;
-    } // .ai-product-details__content {
-    //     opacity: 1;
-    // }
+    }
 }
 
 
@@ -85,6 +83,10 @@
                     margin: 1rem 1rem 1rem 1rem;
                 }
             }
+        }
+
+        &__btn-icon {
+            color: $ai-primaryColorRed;
         }
     }
 }
