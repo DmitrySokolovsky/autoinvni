@@ -32,7 +32,9 @@ export class ProductDetails extends React.Component {
                                         }) : ''
                                 }
                             </ul>
-                            <button onClick={() => this.onDetailsClose()} className="ai-product-details__closeBtn">HIDE</button>
+                            <a onClick={() => this.onDetailsClose()} className="ai-product-details__closeBtn">
+                                <i className="fas fa-times ai-product-details__btn-icon fa-3x"></i>
+                            </a>
                         </div>
                     </div>
                 </div>

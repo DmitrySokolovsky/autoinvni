@@ -48,3 +48,21 @@
         color: white;
     }
 }
+
+@media (min-width: 300px) and (max-width: 700px) {
+    .ai-product-item {
+        width: 320px;
+
+        .ai-product-item__pic {
+            width: 320px;
+        }
+
+        &__title-container {
+            width: 320px;
+        }
+
+        &__button {
+            width: 320px;
+        }
+    }
+}
