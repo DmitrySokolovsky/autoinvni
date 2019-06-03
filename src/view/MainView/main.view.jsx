@@ -10,7 +10,17 @@ export class MainView extends React.Component {
             <div className="main-view">
                 <header className="ai-header">
                     <div className="ai-header-logo"></div>
-                    <h2 className="ai-header-pnumber">+375 29 749 01 17</h2>
+                    <div className="ai-header-contacts-container">
+                        <h2 className="ai-header-pnumber">+375 29 749 01 17 <img className="ai-header-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/MTS_logo_2015.svg/512px-MTS_logo_2015.svg.png"/></h2>
+                        <div className="ai-header-working-hours-container">
+                            <h4 className="ai-header-working-title">Режим работы:</h4>
+                            <div>
+                                <h4 className="ai-header-working-hours">9:00 - 18:00 ПН-ПТ</h4>
+                                <h4 className="ai-header-working-hours">9:00 - 14:00 CБ-ВС</h4>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </header>
                 <div className="ai-header__slogan">
                     <h1>Ремонт автомобилей и микроавтобусов</h1>
@@ -59,13 +69,20 @@ export class MainView extends React.Component {
                             Могилёв, Гомельское шоссе, 64 
                         </p>
                         <p className="ai-about-text__primary">
-                            Телефон +375 29 749 01 17
+                            Телефон +375 29 749 01 17 (МТС)
                         </p>
                         <div className="ai-about-text__primary">
                             Группа в 
                             <a className="ai-sn" href="">
                                 <i className="fab fa-vk ai-sn-icon fa-1x ai-sn__icon"></i>
                             </a>
+                        </div>
+                        <div className="ai-about-working-hours-container ai-about-text__primary">
+                            <h4 className="ai-about-working-title">Режим работы:</h4>
+                            <div>
+                                <h4 className="ai-about-working-hours">9:00 - 18:00 ПН-ПТ</h4>
+                                <h4 className="ai-about-working-hours">9:00 - 14:00 CБ-ВС</h4>
+                            </div>
                         </div>
                         <p className="ai-about-text__primary">
                             УНП 790430743, ЧП "ИВНИ"

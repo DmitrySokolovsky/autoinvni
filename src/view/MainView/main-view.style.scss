@@ -27,7 +27,35 @@ body {
 
         &-pnumber {
             color: $ai-primaryColorRed;
+            margin-bottom: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        &-working-hours-container {
+            display: flex;
+        }
+
+        &-img {
+            height: 1.5rem;
+            margin-left: .5rem;
+        }
+
+        &-working-title {
+            padding-right: 1rem;
+            color: $ai-primaryColorRed;
+        }
+
+        &-working-hours {
+            color: $ai-primaryColorRed;
+            display: block;
+        }
+
+        &-contacts-container {
             margin-right: 2rem;
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
         }
     }
 
@@ -138,6 +166,9 @@ body {
         max-width: 320px;
 
         .ai-header {
+            &-working-hours-container {
+                display: none;
+            }    
                 
             &-logo {
                 background-image: url('../../assets/img/logo.png');
@@ -151,8 +182,13 @@ body {
             &-pnumber {
                 color: $ai-primaryColorRed;
                 margin-right: 0;
-                width: 100%;
                 text-align: center;
+            }
+
+            &-contacts-container {
+                display: flex;
+                width: 100%;
+                justify-content: center;
             }
         }
         .ai-header__slogan {
